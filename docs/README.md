@@ -10,6 +10,14 @@ OctoAcme follows a structured yet flexible project management approach designed 
 - **Data-informed**: Measure impact and iterate based on evidence
 - **Psychological safety**: Encourage feedback and learning
 
+## Project Management Process Summary
+
+OctoAcme employs a structured, phase-based project lifecycle that emphasizes stakeholder alignment, iterative delivery, and clear ownership. The approach spans five key stages: **Initiation**, where business needs and success metrics are validated with stakeholders; **Planning**, where work is broken into shippable increments with defined acceptance criteria; **Execution**, where teams deliver using sprint-based workflows; **Release**, where features move to production with quality gates; and **Close & Retrospective**, where learnings are captured and fed back into continuous improvement. This lifecycle is underpinned by lightweight but rigorous artifacts—including project one-pagers, risk registers, and release notes—that serve as single sources of truth for each project.
+
+The organizational structure relies on three core roles working in tandem. **Project Managers** coordinate schedules, manage risks and dependencies, and ensure consistent stakeholder communication. **Product Managers** define objectives, prioritize backlogs, and measure success metrics to drive customer value. **Developers** implement features with quality standards (unit tests, integration tests, security scanning) and collaborate on design and risk identification. This clear role delineation reduces ambiguity and accelerates decision-making. Communication occurs at multiple cadences—daily standups (15 min), weekly PM/PdM syncs, twice-weekly team standups, and monthly stakeholder updates—with ad-hoc escalations when blockers arise.
+
+Quality assurance and risk management are woven throughout execution. Teams follow a pull request workflow with small PRs (≤400 lines), automated CI/CD checks, and at least one approval before merge. Testing includes unit, integration, and end-to-end smoke tests, plus security scanning. The risk lifecycle—identify, assess, mitigate, and monitor—is actively managed through a risk register reviewed at weekly syncs. Blocker escalation follows a three-level path (team triage → PM escalation → sponsor level), ensuring rapid issue resolution. Pre-release gates require passing CI, security scans, and smoke tests, with a documented rollback plan for production incidents.
+
 ## Process Documentation
 
 ### 1. [Project Initiation](octoacme-project-initiation.md)
